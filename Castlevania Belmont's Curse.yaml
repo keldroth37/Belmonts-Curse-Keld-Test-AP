@@ -1,0 +1,27 @@
+# Castlevania: Belmont's Curse - Archipelago player settings
+# Put this file in your Archipelago "Players" folder (one file per player), change "name", then generate.
+
+name: Player{number}          # your slot name (max 16 characters); {number} is filled in when there are duplicates
+description: Castlevania Belmont's Curse
+game: "Castlevania: Belmont's Curse"
+requires:
+  version: 0.6.4
+
+"Castlevania: Belmont's Curse":
+  # Which ending completes your game. The win is sent automatically when that ending's scene starts.
+  #   bad_ending:    reach Dracula through the Clock Tower without disarming the Death Trap
+  #   normal_ending: disarm the Death Trap with Soul Harvest and defeat Dracula
+  #   true_ending:   normal ending + the four Notre-Dame trials, The Self, and Absolution
+  goal:
+    bad_ending: 0
+    normal_ending: 50
+    true_ending: 0
+
+  # Breaking an EXP statue is a check (adds 147 locations).
+  exp_statues: 'true'
+
+  # Receiving a tarot codex clue is a check. You still get the clue itself.
+  clue_checks: 'true'
+
+  # When you die, everyone with DeathLink dies too, and the other way round.
+  death_link: 'false'
